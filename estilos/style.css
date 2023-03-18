@@ -154,6 +154,11 @@ footer .bi {
   margin: 20px;
 }
 
+video {
+  padding: 30px;
+  margin: 10px;
+}
+
 /* ASPECTOS */
 
 .aspectos-container {
