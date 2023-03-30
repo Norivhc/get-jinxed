@@ -1,0 +1,11 @@
+$estiloFormu: (
+  padding: 30px,
+  width: 30%,
+  margin-bottom: 200px,
+);
+
+fieldset {
+  padding: map-get($map: $estiloFormu, $key: padding);
+  width: map-get($map: $estiloFormu, $key: width);
+  margin-bottom: map-get($map: $estiloFormu, $key: margin-bottom);
+}

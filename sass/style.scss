@@ -1,3 +1,12 @@
+@import "index";
+@import "aspectos";
+@import "historia";
+@import "cinematicas";
+@import "contacto";
+
+/* variables */
+$colorText: rgb(252, 251, 252);
+
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap");
 
 /* ESTILOS GENERALES*/
@@ -28,197 +37,35 @@ h3 {
 
 body {
   background-color: black;
-  color: rgb(252, 251, 252);
+  color: $colorText;
   font-family: "Shantell Sans", cursive;
 }
 
-.nav-link {
-  color: #a878aa;
-  font-size: 1.3rem;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
+header {
+  position: sticky;
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .nav-link {
+    color: #a878aa;
+    font-size: 1.3rem;
+  }
 }
 
 footer {
   padding: 50px;
   border-top: 1px solid rgb(54, 22, 54);
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-footer .bi {
-  color: #a878aa;
-  font-size: 2.3rem;
-}
-
-/* INDEX */
-
-.desc {
-  padding: 50px;
-}
-
-.principal {
-  width: 100%;
-}
-
-.pasiva {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.pasiva-info {
-  padding: 50px;
-  margin: 20px;
-}
-
-.hab-1 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.hab-1-info {
-  padding: 50px;
-  margin: 20px;
-}
-
-.hab-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.hab-2-info {
-  padding: 10px;
-  margin: 10px;
-}
-
-.hab-3 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.hab-3-info {
-  padding: 50px;
-  margin: 20px;
-}
-
-.hab-4 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.hab-4-info {
-  padding: 50px;
-  margin: 20px;
-}
-
-video {
-  padding: 30px;
-  margin: 10px;
-}
-
-/* ASPECTOS */
-
-.aspectos-container {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  grid-row-gap: 60px;
-  justify-items: center;
-}
-
-.aspectos-container img {
-  width: 360px;
-  height: 360px;
-}
-
-/* CINEMÁTICAS */
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 60px;
-}
-
-iframe {
-  width: 720px;
-  height: 400px;
-}
-
-/* HISTORIA */
-
-.article-container article {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-}
-
-.info-a p {
-  font-size: larger;
-  padding: 50px;
-  margin: 10px;
-}
-
-.boc-1 {
-  width: 800px;
-  height: 600px;
-}
-
-.info-b p {
-  font-size: larger;
-  padding: 50px;
-  margin: 10px;
-}
-
-.boc-2 {
-  width: 900px;
-  height: 500px;
-}
-
-.info-c p {
-  font-size: larger;
-  padding: 50px;
-  margin: 10px;
-}
-
-.boc-3 {
-  width: 800px;
-  height: 500px;
-}
-
-.info-d p {
-  font-size: larger;
-  padding: 50px;
-  margin: 10px;
-}
-
-.boc-4 {
-  width: 800px;
-  height: 500px;
-}
-/* CONTACTO */
-
-fieldset {
-  padding: 30px;
-  width: 30%;
-  margin-bottom: 200px;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li {
+    list-style: none;
+  }
+  .bi {
+    color: #a878aa;
+    font-size: 2.3rem;
+  }
 }
 
 /* MEADIA QUERIS */
