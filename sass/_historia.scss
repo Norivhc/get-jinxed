@@ -1,3 +1,9 @@
+/* mixins */
+@mixin sizes($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
 .article-container article {
   text-align: justify;
   display: flex;
@@ -6,8 +12,7 @@
 }
 .info-a p {
   font-size: larger;
-  padding: 50px;
-  margin: 10px;
+  @include sizes(50px, 10px);
 }
 
 .boc-1 {
@@ -17,8 +22,7 @@
 
 .info-b p {
   font-size: larger;
-  padding: 50px;
-  margin: 10px;
+  @include sizes(50px, 10px);
 }
 
 .boc-2 {
@@ -28,8 +32,7 @@
 
 .info-c p {
   font-size: larger;
-  padding: 50px;
-  margin: 10px;
+  @include sizes(50px, 10px);
 }
 
 .boc-3 {
@@ -39,8 +42,7 @@
 
 .info-d p {
   font-size: larger;
-  padding: 50px;
-  margin: 10px;
+  @include sizes(50px, 10px);
 }
 
 .boc-4 {
