@@ -1,11 +1,43 @@
 $estiloFormu: (
-  padding: 30px,
-  width: 30%,
-  margin-bottom: 200px,
+  padding: 10px,
+  margin-bottom: 20px,
+  font-size: 16px,
 );
 
-fieldset {
-  padding: map-get($map: $estiloFormu, $key: padding);
-  width: map-get($map: $estiloFormu, $key: width);
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
   margin-bottom: map-get($map: $estiloFormu, $key: margin-bottom);
+  padding: map-get($map: $estiloFormu, $key: padding);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: map-get($map: $estiloFormu, $key: font-size);
+}
+
+input[type="reset"],
+input[type="submit"] {
+  padding: map-get($map: $estiloFormu, $key: padding);
+  background-color: #a878aa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: map-get($map: $estiloFormu, $key: font-size);
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: rgb(54, 22, 54);
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
