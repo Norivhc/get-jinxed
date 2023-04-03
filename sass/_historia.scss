@@ -9,7 +9,14 @@
   display: flex;
   align-items: center;
   padding: 50px;
+  img {
+    transition: 0.3s ease all;
+  }
+  img:hover {
+    transform: scale(1.07);
+  }
 }
+
 .info-a p {
   font-size: larger;
   @include sizes(50px, 10px);
